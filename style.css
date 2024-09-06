@@ -1,0 +1,79 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+/* ------------------------------------------------------------------- */
+main {
+  display: flex;
+  height: 100vh;
+}
+
+aside {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+
+}
+
+.side-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.odin-overlay {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.odin-overlay p {
+  color: white;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.credit a {
+  color: black;
+}
+
+.credit a:hover {
+  color: blue;
+}
