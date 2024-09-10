@@ -147,3 +147,26 @@ label {
   font-weight: 500;
   font-size: smaller;
 }
+
+.submit-button {
+  padding: 10px 60px 10px 60px;
+  background-color: #596D48;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.submit-button:hover {
+  box-shadow: 0 0 10px #596D48;
+}
+
+.existing-account {
+  font-weight: 500;
+}
+
+.existing-account a {
+  color: #596D48;
+  text-decoration: none;
+}
