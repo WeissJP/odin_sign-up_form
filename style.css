@@ -49,7 +49,6 @@ aside {
   display: flex;
   position: relative;
   overflow: hidden;
-  width: fit-content;
   justify-content: center;
 }
 
@@ -60,6 +59,7 @@ aside {
 
 .side-image {
   object-fit: cover;
+  height: 100vh;
 }
 
 .odin-overlay {
@@ -100,4 +100,50 @@ aside {
   font-weight: bold;
   font-size: larger;
   gap: 20px;
+}
+
+.form-area {
+  padding: 25px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+.form-area h2 {
+  margin-bottom: 20px;
+}
+
+form ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+  padding: 0;
+  gap: 15px;
+}
+
+form ul li {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid blue;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+input:invalid {
+  outline: none;
+  border: 2px solid red;
+  box-shadow: 0 0 10px lightcoral;
+}
+
+label {
+  font-weight: 500;
+  font-size: smaller;
 }
