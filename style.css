@@ -27,6 +27,11 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 /* ------------------------------------------------------------------- */
+@font-face {
+  font-family: Norse-Bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
 main {
   display: flex;
   height: 100vh;
@@ -38,6 +43,10 @@ aside {
   overflow: hidden;
   justify-content: center;
 
+}
+
+.norse-font {
+  font-family: Norse-Bold;
 }
 
 .side-image {
